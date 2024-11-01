@@ -1,11 +1,10 @@
 import 'package:firebase_core/firebase_core.dart';
-import 'package:mynotes/firebase_options.dart';
-import 'package:mynotes/services/auth/auth_user.dart';
-import 'package:mynotes/services/auth/auth_provider.dart';
-import 'package:mynotes/services/auth/auth_exceptions.dart';
 
 import 'package:firebase_auth/firebase_auth.dart'
-    show FirebaseAuth, FirebaseAuthException;
+    show AuthProvider, FirebaseAuth, FirebaseAuthException;
+import 'package:learningflutter/firebase_options.dart';
+import 'package:learningflutter/services/auth/auth_exceptions.dart';
+import 'package:learningflutter/services/auth/auth_user.dart';
 
 class FirebaseAuthProvider implements AuthProvider {
   @override
@@ -104,4 +103,8 @@ class FirebaseAuthProvider implements AuthProvider {
       throw UserNotLoggedInAuthException();
     }
   }
+
+  @override
+  // TODO: implement providerId
+  String get providerId => throw UnimplementedError();
 }

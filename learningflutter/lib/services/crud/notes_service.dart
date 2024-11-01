@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:flutter/foundation.dart';
-import 'package:mynotes/extensions/list/filter.dart';
-import 'package:mynotes/services/crud/crud_exceptions.dart';
+import 'package:learningflutter/extensions/list/filter.dart';
+import 'package:learningflutter/services/crud/crud_exceptions.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart' show join;
