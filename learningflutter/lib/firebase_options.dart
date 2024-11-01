@@ -33,12 +33,6 @@ class DefaultFirebaseOptions {
           'DefaultFirebaseOptions have not been configured for macos - '
           'you can reconfigure this by running the FlutterFire CLI again.',
         );
-      case TargetPlatform.fuchsia:
-      // TODO: Handle this case.
-      case TargetPlatform.linux:
-      // TODO: Handle this case.
-      case TargetPlatform.windows:
-      // TODO: Handle this case.
     }
 
     throw UnsupportedError(
@@ -60,8 +54,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '877208178211',
     projectId: 'mynotes-flutter-project',
     storageBucket: 'mynotes-flutter-project.appspot.com',
-    iosClientId:
-        '877208178211-pkk6a4dfdsmh1tfm4ffhdss9lmmjl0mc.apps.googleusercontent.com',
+    iosClientId: '877208178211-pkk6a4dfdsmh1tfm4ffhdss9lmmjl0mc.apps.googleusercontent.com',
     iosBundleId: 'se.pixolity.mynotes',
   );
 }
