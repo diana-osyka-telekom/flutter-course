@@ -4,7 +4,7 @@ import 'package:learningflutter/services/auth/auth_service.dart';
 import 'package:learningflutter/views/login_view.dart';
 import 'package:learningflutter/views/notes_view.dart';
 import 'package:learningflutter/views/register_view.dart';
-import 'package:learningflutter/views/veify_email_view.dart';
+import 'package:learningflutter/views/verify_email_view.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -19,6 +19,7 @@ void main() {
         loginRoute: (context) => const LoginView(),
         registerRoute: (context) => const RegisterView(),
         notesRoute: (context) => const NotesView(),
+        verifyEmailRoute: (context) => const VerifyEmailView(),
       },
     ),
   );
@@ -51,5 +52,3 @@ class HomePage extends StatelessWidget {
     );
   }
 }
-
-enum MenuAction { logout }

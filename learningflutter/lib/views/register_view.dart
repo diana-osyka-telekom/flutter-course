@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learningflutter/constants/routes.dart';
-import 'package:learningflutter/services/auth/auth_exeptions.dart';
+import 'package:learningflutter/services/auth/auth_exceptions.dart';
 import 'package:learningflutter/services/auth/auth_service.dart';
 import 'package:learningflutter/utilities/show_error_dialog.dart';
 

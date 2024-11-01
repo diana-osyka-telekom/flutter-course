@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learningflutter/constants/routes.dart';
-import 'package:learningflutter/services/auth/auth_exeptions.dart';
+import 'package:learningflutter/services/auth/auth_exceptions.dart';
 import 'package:learningflutter/services/auth/auth_service.dart';
 import 'package:learningflutter/utilities/show_error_dialog.dart';
 
@@ -14,8 +14,6 @@ class LoginView extends StatefulWidget {
 class _LoginViewState extends State<LoginView> {
   late final TextEditingController _email;
   late final TextEditingController _password;
-
-  String? get verifyEmailRoute => null;
 
   @override
   void initState() {
@@ -76,7 +74,7 @@ class _LoginViewState extends State<LoginView> {
                 } else {
                   // user's email is NOT verified
                   Navigator.of(context).pushNamedAndRemoveUntil(
-                    verifyEmailRoute!,
+                    verifyEmailRoute,
                     (route) => false,
                   );
                 }
@@ -96,7 +94,6 @@ class _LoginViewState extends State<LoginView> {
                   'Authentication error',
                 );
               }
-              ;
             },
             child: const Text('Login'),
           ),
